@@ -10,6 +10,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+
 
 <!-- UIkit JS -->
 
@@ -17,50 +22,85 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit-icons.min.js"></script>
 
 </head>
-<body>
+<body style="background: #E0EAFC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+font-family: 'Montserrat', sans-serif;">
 
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky " >
-	<nav class="uk-navbar uk-navbar-container uk-margin " uk-navbar style="background:#428bca;color: white !important;z-index: 9999">
-	    <div class="uk-navbar-left">
-	        <a class="uk-navbar-toggle" href="#" uk-toggle="target: #offcanvas-nav-primary"  style="color:white">
-	            <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left ">Menu</span>
-	        </a>
-	    </div>
-	    <div class="uk-navbar-right">
+	
 
-	        <ul class="uk-navbar-nav">
-	            <li>
-	                <a href="#"  style="color:white"><span class="fas fa-user"></span></a>
-	                <div class="uk-navbar-dropdown">
-	                    <ul class="uk-nav uk-navbar-dropdown-nav">
-	                        <li class="uk-active"><a href="#">Active</a></li>
-	                        <li><a href="#">Item</a></li>
-	                        <li class="uk-nav-header">Header</li>
-	                        <li><a href="#">Item</a></li>
-	                        <li><a href="#">Item</a></li>
-	                        <li class="uk-nav-divider"></li>
-	                        <li><a href="#">Item</a></li>
-	                    </ul>
-	                </div>
-	            </li>
-	        </ul>
+  <nav class="uk-navbar-container uk-margin" uk-navbar style="background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ">
+
+      <div class="uk-navbar-left uk-margin-small-left" >
+	        <a class="uk-navbar-toggle" href="#" uk-toggle="target: #offcanvas-nav-primary"  style="color:white">
+	            <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left "></span>
+          </a>
+        
 	    </div>
-	</nav>
+      
+
+       <div class="uk-navbar-center">
+          <img class="uk-border " width="40" height="40" src="logo-1.png">        
+	    </div>
+
+      <div class="nav-overlay uk-navbar-right">
+  
+        <a class="uk-navbar-toggle" uk-search-icon href="#"  style="color:white"></a>
+        <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+            <form class="uk-search uk-search-navbar uk-width-1-1"  >
+                <input class="uk-search-input" type="search" placeholder="Search..." autofocus  style="color:white;">
+            </form>
+        </div>
+        <ul class="uk-navbar-nav">
+            <li>
+                <a href="#"  style="color:white"><img class="uk-border-circle uk-margin-small-right" width="40" height="40" src="user.png"></a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+  
+      </div>
+  
+      <div>
+     
+       
+      </div>
+
+      
+  
+  </nav>
 </div>
 
 <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
     <div class="uk-offcanvas-bar uk-flex uk-flex-column">
 
-        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+        <ul class="uk-nav uk-nav-primary uk-margin-auto-vertical" >
            
             <li class="uk-nav-header">Vee Pay</li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span>Item</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+            <br>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-tachometer-alt" ></span>Dashboard</a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-users" ></span>Customers</a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-qrcode"></span> QR Code</a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-box "></span> Orders</a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-bars"></span> Menu</a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-book"></span> Day Book</a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-clipboard-list"></span> Activity Log</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Kitchen Sceen</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Utilities</a></li>
 
             <li class="uk-nav-divider"></li>
             <li><a href="#" ><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
@@ -111,7 +151,7 @@
               <p><span class="uk-icon-button uk-margin-small-right uk-text-center" uk-icon="user"></span> Customer List ( 5 ) </p>
               <hr class="uk-divider-small">
               <ul uk-accordion="multiple: false">
-                  <li class="uk-open">
+                  <li class="">
                       <a class="uk-accordion-title" href="#">Harold </a>
                       <div class="uk-accordion-content">
                           <p style="font-size:.8em">
@@ -175,21 +215,126 @@
           </div>
       </div>
       <div>
-         <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-text-center">
-            <p>Total Customers</p>
-             <a href="" class="uk-icon-button uk-margin-small-right uk-text-center" uk-icon="users"></a>33
+          <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+             
+              <p><span class="uk-icon-button uk-margin-small-right uk-text-center" uk-icon="user"></span> Customer Requests ( 3 ) </p>
+              <hr class="uk-divider-small">
+              <ul uk-accordion="multiple: false">
+               
+                  <li>
+                      <a class="uk-accordion-title" href="#">Nick</a>
+                      <div class="uk-accordion-content">
+                          <p style="font-size:.8em">
+                              Creation Time : April 7, 9.00pm 2019 <br> <br>
+                              Description : Room NO.202 <br><br>
+                              Phone Number : 9876543210 <br><br>
+                              Email ID : hary@gmail.com <br><br>
+                              Customer Pin : <b> 8976 </b>
+                            </p>                      
+                      </div>
+                  </li>
+                  <li>
+                      <a class="uk-accordion-title" href="#">Benjamin</a>
+                      <div class="uk-accordion-content">
+                          <p style="font-size:.8em">
+                              Creation Time : April 7, 9.00pm 2019 <br> <br>
+                              Description : Room NO.202 <br><br>
+                              Phone Number : 9876543210 <br><br>
+                              Email ID : hary@gmail.com <br><br>
+                              Customer Pin : <b> 8976 </b>
+                            </p>                      
+                      </div>
+                  </li>
+                  <li>
+                      <a class="uk-accordion-title" href="#">Frank</a>
+                      <div class="uk-accordion-content">
+                          <p style="font-size:.8em">
+                              Creation Time : April 7, 9.00pm 2019 <br> <br>
+                              Description : Room NO.202 <br><br>
+                              Phone Number : 9876543210 <br><br>
+                              Email ID : hary@gmail.com <br><br>
+                              Customer Pin : <b> 8976 </b>
+                            </p>
+                      </div>
+                  </li>
+              </ul>   
           </div>
-      </div>  
+      </div>
       <div>
-         <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-text-center">
-            <p>Total Orders</p>
-             <a href="" class="uk-icon-button uk-margin-small-right uk-text-center" uk-icon="cart"></a>90
+          <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+             
+              <p><span class="uk-icon-button uk-margin-small-right uk-text-center" uk-icon="user"></span> Order List ( 3 ) </p>
+              <hr class="uk-divider-small">
+              <ul uk-accordion="multiple: false">
+                  <li class="uk">
+                      <a class="uk-accordion-title" href="#">MARTA  </a>
+                      <div class="uk-accordion-content">
+                          <p style="font-size:.8em">
+                            Order Time : May 2, 2019, 8:43 p.m. <br> <br>
+                            Order No : 1556809995 <br><br>
+                            Order QRCode : <b> 8976 </b> <br><br>
+                            ITEMS ORDERED : 
+                            <ul>
+                              <li>
+                                   Ginger Lemon Honey - 1 
+                              </li>
+                              <br>
+                              <li>
+                                   Kadhai Paneer - 1 
+                             </li>
+                            </ul>
+                          </p>
+
+                      </div>
+                  </li>
+                  
+                  <li>
+                      <a class="uk-accordion-title" href="#">Benjamin</a>
+                      <div class="uk-accordion-content">
+                          <p style="font-size:.8em">
+                              Creation Time : April 7, 9.00pm 2019 <br> <br>
+                              Description : Room NO.202 <br><br>
+                              Phone Number : 9876543210 <br><br>
+                              Email ID : hary@gmail.com <br><br>
+                              Customer Pin : <b> 8976 </b>
+                            </p>                      
+                      </div>
+                  </li>
+                  <li>
+                      <a class="uk-accordion-title" href="#">Frank</a>
+                      <div class="uk-accordion-content">
+                          <p style="font-size:.8em">
+                              Creation Time : April 7, 9.00pm 2019 <br> <br>
+                              Description : Room NO.202 <br><br>
+                              Phone Number : 9876543210 <br><br>
+                              Email ID : hary@gmail.com <br><br>
+                              Customer Pin : <b> 8976 </b>
+                            </p>
+                      </div>
+                  </li>
+              </ul>   
           </div>
-      </div> 
+      </div>
       
   </div>
   
   
+
+  <div id="modal-sections" uk-modal>
+      <div class="uk-modal-dialog">
+          <button class="uk-modal-close-default" type="button" uk-close></button>
+          <div class="uk-modal-header">
+              <h2 class="uk-modal-title">Modal Title</h2>
+          </div>
+          <div class="uk-modal-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="uk-modal-footer uk-text-right">
+              <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+              <button class="uk-button uk-button-primary" type="button">Save</button>
+          </div>
+      </div>
+  </div>
   
   
   </div>
