@@ -22,11 +22,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit-icons.min.js"></script>
 
 </head>
-<body style="background: #E0EAFC;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-font-family: 'Montserrat', sans-serif;">
+<body style="font-family: 'Montserrat', sans-serif;">
 
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky " >
 	
@@ -61,13 +57,10 @@ font-family: 'Montserrat', sans-serif;">
                 <a href="#"  style="color:white"><img class="uk-border-circle uk-margin-small-right" width="40" height="40" src="user.png"></a>
                 <div class="uk-navbar-dropdown">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                        <li class="uk-active"><a href="#">Active</a></li>
-                        <li><a href="#">Item</a></li>
-                        <li class="uk-nav-header">Header</li>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
-                        <li class="uk-nav-divider"></li>
-                        <li><a href="#">Item</a></li>
+                        <li class="uk-active"><a href="#">Ashutosh</a></li>
+                        <li><a href="#">aj97389@gmail.com</a></li><br>
+                        <li>    <button class="uk-button uk-button-primary uk-button-small">Log Out</button>
+                        </li>
                     </ul>
                 </div>
             </li>
@@ -92,18 +85,20 @@ font-family: 'Montserrat', sans-serif;">
            
             <li class="uk-nav-header">Vee Pay</li>
             <br>
-            <li><a href="#"><span class="uk-margin-small-right fas fa-tachometer-alt" ></span>Dashboard</a></li>
-            <li><a href="#"><span class="uk-margin-small-right fas fa-users" ></span>Customers</a></li>
-            <li><a href="#"><span class="uk-margin-small-right fas fa-qrcode"></span> QR Code</a></li>
-            <li><a href="#"><span class="uk-margin-small-right fas fa-box "></span> Orders</a></li>
-            <li><a href="#"><span class="uk-margin-small-right fas fa-bars"></span> Menu</a></li>
-            <li><a href="#"><span class="uk-margin-small-right fas fa-book"></span> Day Book</a></li>
-            <li><a href="#"><span class="uk-margin-small-right fas fa-clipboard-list"></span> Activity Log</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Kitchen Sceen</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Utilities</a></li>
+            <li><a href="#"><span class="uk-margin-small-right uk-text-small fas fa-tachometer-alt"></span><span class=" uk-text-small">Dashboard</span></a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-users uk-text-small" ></span><span class=" uk-text-small">Customers</span></a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-qrcode uk-text-small"></span><span class=" uk-text-small">QR Code</span></a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-box uk-text-small "></span> <span class=" uk-text-small">Orders</span></a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-bars uk-text-small"></span> <span class=" uk-text-small">Menu</span></a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-book uk-text-small"></span><span class=" uk-text-small">Day Book</span></a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-clipboard-list uk-text-small"></span> <span class=" uk-text-small">Activity Log</span></a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-clipboard-list uk-text-small"></span><span class=" uk-text-small">Kitchen Screen</span></a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-clipboard-list uk-text-small"></span> <span class=" uk-text-small">Utilities</span></a></li>
 
             <li class="uk-nav-divider"></li>
-            <li><a href="#" ><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-user uk-text-small"></span> <span class=" uk-text-small">Profile Details</span></a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-sign-out-alt uk-text-small"></span> <span class=" uk-text-small">Log Out</span></a></li>
+
         </ul>
 
     </div>
@@ -160,7 +155,7 @@ font-family: 'Montserrat', sans-serif;">
                             Phone Number : 9876543210 <br><br>
                             Email ID : hary@gmail.com <br><br>
                             Customer Pin : <b> 8976 </b> <br><br>
-                            <a href="" style=""> EDIT <span class="uk-icon-button uk-margin-small-right uk-text-center" uk-icon="file-edit"></span></a> or &nbsp;<a href=""> DELETE <span class="uk-icon-button uk-margin-small-right uk-text-center" uk-icon="trash"></span></a>
+                         <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button> 
                           </p>
                       </div>
                   </li>
@@ -172,8 +167,10 @@ font-family: 'Montserrat', sans-serif;">
                               Description : Room NO.202 <br><br>
                               Phone Number : 9876543210 <br><br>
                               Email ID : hary@gmail.com <br><br>
-                              Customer Pin : <b> 8976 </b>
-                            </p>                      </div>
+                              Customer Pin : <b> 8976 </b><br><br>
+                            <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>
+                              </p>
+                                </div>
                   </li>
                   <li>
                       <a class="uk-accordion-title" href="#">Nick</a>
@@ -183,8 +180,9 @@ font-family: 'Montserrat', sans-serif;">
                               Description : Room NO.202 <br><br>
                               Phone Number : 9876543210 <br><br>
                               Email ID : hary@gmail.com <br><br>
-                              Customer Pin : <b> 8976 </b>
-                            </p>                      
+                              Customer Pin : <b> 8976 </b><br><br>
+                            <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>
+                              </p>
                       </div>
                   </li>
                   <li>
@@ -195,8 +193,9 @@ font-family: 'Montserrat', sans-serif;">
                               Description : Room NO.202 <br><br>
                               Phone Number : 9876543210 <br><br>
                               Email ID : hary@gmail.com <br><br>
-                              Customer Pin : <b> 8976 </b>
-                            </p>                      
+                              Customer Pin : <b> 8976</b><br><br>
+                               <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>     
+                            </p>
                       </div>
                   </li>
                   <li>
@@ -207,7 +206,8 @@ font-family: 'Montserrat', sans-serif;">
                               Description : Room NO.202 <br><br>
                               Phone Number : 9876543210 <br><br>
                               Email ID : hary@gmail.com <br><br>
-                              Customer Pin : <b> 8976 </b>
+                              Customer Pin : <b> 8976 </b><br><br>
+                             <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>       
                             </p>
                       </div>
                   </li>
@@ -229,8 +229,9 @@ font-family: 'Montserrat', sans-serif;">
                               Description : Room NO.202 <br><br>
                               Phone Number : 9876543210 <br><br>
                               Email ID : hary@gmail.com <br><br>
-                              Customer Pin : <b> 8976 </b>
-                            </p>                      
+                              Customer Pin : <b> 8976 </b><br><br>
+                              <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>       
+                             </p>
                       </div>
                   </li>
                   <li>
@@ -241,8 +242,9 @@ font-family: 'Montserrat', sans-serif;">
                               Description : Room NO.202 <br><br>
                               Phone Number : 9876543210 <br><br>
                               Email ID : hary@gmail.com <br><br>
-                              Customer Pin : <b> 8976 </b>
-                            </p>                      
+                              Customer Pin : <b> 8976 </b><br><br>
+                              <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>       
+                             </p>
                       </div>
                   </li>
                   <li>
@@ -253,8 +255,9 @@ font-family: 'Montserrat', sans-serif;">
                               Description : Room NO.202 <br><br>
                               Phone Number : 9876543210 <br><br>
                               Email ID : hary@gmail.com <br><br>
-                              Customer Pin : <b> 8976 </b>
-                            </p>
+                              Customer Pin : <b> 8976 </b><br><br>
+                              <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>       
+                             </p>
                       </div>
                   </li>
               </ul>   
@@ -282,8 +285,9 @@ font-family: 'Montserrat', sans-serif;">
                               <li>
                                    Kadhai Paneer - 1 
                              </li>
-                            </ul>
-                          </p>
+                            </ul><br><br>
+                            <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>       
+                           </p>
 
                       </div>
                   </li>
@@ -291,25 +295,43 @@ font-family: 'Montserrat', sans-serif;">
                   <li>
                       <a class="uk-accordion-title" href="#">Benjamin</a>
                       <div class="uk-accordion-content">
-                          <p style="font-size:.8em">
-                              Creation Time : April 7, 9.00pm 2019 <br> <br>
-                              Description : Room NO.202 <br><br>
-                              Phone Number : 9876543210 <br><br>
-                              Email ID : hary@gmail.com <br><br>
-                              Customer Pin : <b> 8976 </b>
-                            </p>                      
+                        <p style="font-size:.8em">
+                            Order Time : May 2, 2019, 8:43 p.m. <br> <br>
+                            Order No : 1556809995 <br><br>
+                            Order QRCode : <b> 8976 </b> <br><br>
+                            ITEMS ORDERED : 
+                            <ul>
+                              <li>
+                                   Ginger Lemon Honey - 1 
+                              </li>
+                              <br>
+                              <li>
+                                   Kadhai Paneer - 1 
+                             </li>
+                            </ul><br><br>
+                            <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>       
+                           </p>                    
                       </div>
                   </li>
                   <li>
                       <a class="uk-accordion-title" href="#">Frank</a>
                       <div class="uk-accordion-content">
-                          <p style="font-size:.8em">
-                              Creation Time : April 7, 9.00pm 2019 <br> <br>
-                              Description : Room NO.202 <br><br>
-                              Phone Number : 9876543210 <br><br>
-                              Email ID : hary@gmail.com <br><br>
-                              Customer Pin : <b> 8976 </b>
-                            </p>
+                        <p style="font-size:.8em">
+                            Order Time : May 2, 2019, 8:43 p.m. <br> <br>
+                            Order No : 1556809995 <br><br>
+                            Order QRCode : <b> 8976 </b> <br><br>
+                            ITEMS ORDERED : 
+                            <ul>
+                              <li>
+                                   Ginger Lemon Honey - 1 
+                              </li>
+                              <br>
+                              <li>
+                                   Kadhai Paneer - 1 
+                             </li>
+                            </ul><br><br>
+                            <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>       
+                           </p>
                       </div>
                   </li>
               </ul>   
@@ -320,24 +342,6 @@ font-family: 'Montserrat', sans-serif;">
   
   
 
-  <div id="modal-sections" uk-modal>
-      <div class="uk-modal-dialog">
-          <button class="uk-modal-close-default" type="button" uk-close></button>
-          <div class="uk-modal-header">
-              <h2 class="uk-modal-title">Modal Title</h2>
-          </div>
-          <div class="uk-modal-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="uk-modal-footer uk-text-right">
-              <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-              <button class="uk-button uk-button-primary" type="button">Save</button>
-          </div>
-      </div>
-  </div>
-  
-  
-  </div>
 
 
 </body>
