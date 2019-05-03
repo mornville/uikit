@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DashBoard</title>
+		<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+
+
+<!-- UIkit JS -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit-icons.min.js"></script>
+
+</head>
+<body style="font-family: 'Montserrat', sans-serif;">
+
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky " >
+	
+
+  <nav class="uk-navbar-container uk-margin" uk-navbar style="background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ">
+
+      <div class="uk-navbar-left uk-margin-small-left" >
+	        <a class="uk-navbar-toggle" href="#" uk-toggle="target: #offcanvas-nav-primary"  style="color:white">
+	            <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left "></span>
+          </a>
+        
+	    </div>
+      
+
+       <div class="uk-navbar-center">
+          <img class="uk-border " width="40" height="40" src="logo-1.png">        
+	    </div>
+
+      <div class="nav-overlay uk-navbar-right">
+  
+        <a class="uk-navbar-toggle" uk-search-icon href="#"  style="color:white"></a>
+        <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+            <form class="uk-search uk-search-navbar uk-width-1-1"  >
+                <input class="uk-search-input" type="search" placeholder="Search..." autofocus  style="color:white;">
+            </form>
+        </div>
+        <ul class="uk-navbar-nav">
+            <li>
+                <a href="#"  style="color:white"><img class="uk-border-circle uk-margin-small-right" width="40" height="40" src="user.png"></a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active"><a href="#">Ashutosh</a></li>
+                        <li><a href="#">aj97389@gmail.com</a></li><br>
+                        <li>    <button class="uk-button uk-button-primary uk-button-small">Log Out</button>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+  
+      </div>
+  
+      <div>
+     
+       
+      </div>
+
+      
+  
+  </nav>
+</div>
+
+<div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-margin-auto-vertical" >
+           
+            <li class="uk-nav-header">Vee Pay</li>
+            <br>
+            <li><a href="#"><span class="uk-margin-small-right uk-text-small fas fa-tachometer-alt"></span><span class=" uk-text-small">Dashboard</span></a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-users uk-text-small" ></span><span class=" uk-text-small">Customers</span></a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-qrcode uk-text-small"></span><span class=" uk-text-small">QR Code</span></a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-box uk-text-small "></span> <span class=" uk-text-small">Orders</span></a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-bars uk-text-small"></span> <span class=" uk-text-small">Menu</span></a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-book uk-text-small"></span><span class=" uk-text-small">Day Book</span></a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-clipboard-list uk-text-small"></span> <span class=" uk-text-small">Activity Log</span></a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-clipboard-list uk-text-small"></span><span class=" uk-text-small">Kitchen Screen</span></a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-clipboard-list uk-text-small"></span> <span class=" uk-text-small">Utilities</span></a></li>
+
+            <li class="uk-nav-divider"></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-user uk-text-small"></span> <span class=" uk-text-small">Profile Details</span></a></li>
+            <li><a href="#"><span class="uk-margin-small-right fas fa-sign-out-alt uk-text-small"></span> <span class=" uk-text-small">Log Out</span></a></li>
+
+        </ul>
+
+    </div>
+</div>
+
+<div class="uk-container uk-margin-medium">
+	<h2 class="uk-heading-bullet ">Dashboard</h2>
+	<div class="uk-child-width-1-3@s uk-margin-medium uk-grid-match" uk-grid>
+    
+    <div>
+        <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-text-center">
+           
+            <p>Total Unpaid Amount</p>
+            <h2 class="uk-heading-line uk-text-center"><span>&#8377; 678,292.00</span></h2>
+
+        </div>
+    </div>
+    <div>
+       <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-text-center">
+          <p>Total Customers</p>
+           <a href="" class="uk-icon-button uk-margin-small-right uk-text-center" uk-icon="users"></a>33
+        </div>
+    </div>  
+    <div>
+       <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-text-center">
+          <p>Total Orders</p>
+           <a href="" class="uk-icon-button uk-margin-small-right uk-text-center" uk-icon="cart"></a>90
+        </div>
+    </div> 
+    
+</div>
+
+
+
+</div>
+
+
+<div class="uk-container uk-margin-medium">
+
+  <div class="uk-child-width-1-3@s uk-margin-medium uk-grid-match" uk-grid>
+    
+      <div>
+          <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+             
+              <p><span class="uk-icon-button uk-margin-small-right uk-text-center" uk-icon="user"></span> Customer List ( 5 ) </p>
+              <hr class="uk-divider-small">
+              <ul uk-accordion="multiple: false">
+                  <li class="">
+                      <a class="uk-accordion-title" href="#">Harold </a>
+                      <div class="uk-accordion-content">
+                          <p style="font-size:.8em">
+                            Creation Time : April 7, 9.00pm 2019 <br> <br>
+                            Description : Room NO.202 <br><br>
+                            Phone Number : 9876543210 <br><br>
+                            Email ID : hary@gmail.com <br><br>
+                            Customer Pin : <b> 8976 </b> <br><br>
+                         <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button> 
+                          </p>
+                      </div>
+                  </li>
+                  <li>
+                      <a class="uk-accordion-title" href="#">Holland</a>
+                      <div class="uk-accordion-content">
+                          <p style="font-size:.8em">
+                              Creation Time : April 7, 9.00pm 2019 <br> <br>
+                              Description : Room NO.202 <br><br>
+                              Phone Number : 9876543210 <br><br>
+                              Email ID : hary@gmail.com <br><br>
+                              Customer Pin : <b> 8976 </b><br><br>
+                            <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>
+                              </p>
+                                </div>
+                  </li>
+                  <li>
+                      <a class="uk-accordion-title" href="#">Nick</a>
+                      <div class="uk-accordion-content">
+                          <p style="font-size:.8em">
+                              Creation Time : April 7, 9.00pm 2019 <br> <br>
+                              Description : Room NO.202 <br><br>
+                              Phone Number : 9876543210 <br><br>
+                              Email ID : hary@gmail.com <br><br>
+                              Customer Pin : <b> 8976 </b><br><br>
+                            <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>
+                              </p>
+                      </div>
+                  </li>
+                  <li>
+                      <a class="uk-accordion-title" href="#">Benjamin</a>
+                      <div class="uk-accordion-content">
+                          <p style="font-size:.8em">
+                              Creation Time : April 7, 9.00pm 2019 <br> <br>
+                              Description : Room NO.202 <br><br>
+                              Phone Number : 9876543210 <br><br>
+                              Email ID : hary@gmail.com <br><br>
+                              Customer Pin : <b> 8976</b><br><br>
+                               <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>     
+                            </p>
+                      </div>
+                  </li>
+                  <li>
+                      <a class="uk-accordion-title" href="#">Frank</a>
+                      <div class="uk-accordion-content">
+                          <p style="font-size:.8em">
+                              Creation Time : April 7, 9.00pm 2019 <br> <br>
+                              Description : Room NO.202 <br><br>
+                              Phone Number : 9876543210 <br><br>
+                              Email ID : hary@gmail.com <br><br>
+                              Customer Pin : <b> 8976 </b><br><br>
+                             <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>       
+                            </p>
+                      </div>
+                  </li>
+              </ul>   
+          </div>
+      </div>
+      <div>
+          <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+             
+              <p><span class="uk-icon-button uk-margin-small-right uk-text-center" uk-icon="user"></span> Customer Requests ( 3 ) </p>
+              <hr class="uk-divider-small">
+              <ul uk-accordion="multiple: false">
+               
+                  <li>
+                      <a class="uk-accordion-title" href="#">Nick</a>
+                      <div class="uk-accordion-content">
+                          <p style="font-size:.8em">
+                              Creation Time : April 7, 9.00pm 2019 <br> <br>
+                              Description : Room NO.202 <br><br>
+                              Phone Number : 9876543210 <br><br>
+                              Email ID : hary@gmail.com <br><br>
+                              Customer Pin : <b> 8976 </b><br><br>
+                              <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>       
+                             </p>
+                      </div>
+                  </li>
+                  <li>
+                      <a class="uk-accordion-title" href="#">Benjamin</a>
+                      <div class="uk-accordion-content">
+                          <p style="font-size:.8em">
+                              Creation Time : April 7, 9.00pm 2019 <br> <br>
+                              Description : Room NO.202 <br><br>
+                              Phone Number : 9876543210 <br><br>
+                              Email ID : hary@gmail.com <br><br>
+                              Customer Pin : <b> 8976 </b><br><br>
+                              <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>       
+                             </p>
+                      </div>
+                  </li>
+                  <li>
+                      <a class="uk-accordion-title" href="#">Frank</a>
+                      <div class="uk-accordion-content">
+                          <p style="font-size:.8em">
+                              Creation Time : April 7, 9.00pm 2019 <br> <br>
+                              Description : Room NO.202 <br><br>
+                              Phone Number : 9876543210 <br><br>
+                              Email ID : hary@gmail.com <br><br>
+                              Customer Pin : <b> 8976 </b><br><br>
+                              <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>       
+                             </p>
+                      </div>
+                  </li>
+              </ul>   
+          </div>
+      </div>
+      <div>
+          <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+             
+              <p><span class="uk-icon-button uk-margin-small-right uk-text-center" uk-icon="cart"></span> Order List ( 3 ) </p>
+              <hr class="uk-divider-small">
+              <ul uk-accordion="multiple: false">
+                  <li class="uk">
+                      <a class="uk-accordion-title" href="#">MARTA  </a>
+                      <div class="uk-accordion-content">
+                          <p style="font-size:.8em">
+                            Order Time : May 2, 2019, 8:43 p.m. <br> <br>
+                            Order No : 1556809995 <br><br>
+                            Order QRCode : <b> 8976 </b> <br><br>
+                            ITEMS ORDERED : 
+                            <ul>
+                              <li>
+                                   Ginger Lemon Honey - 1 
+                              </li>
+                              <br>
+                              <li>
+                                   Kadhai Paneer - 1 
+                             </li>
+                            </ul><br><br>
+                            <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>       
+                           </p>
+
+                      </div>
+                  </li>
+                  
+                  <li>
+                      <a class="uk-accordion-title" href="#">Benjamin</a>
+                      <div class="uk-accordion-content">
+                        <p style="font-size:.8em">
+                            Order Time : May 2, 2019, 8:43 p.m. <br> <br>
+                            Order No : 1556809995 <br><br>
+                            Order QRCode : <b> 8976 </b> <br><br>
+                            ITEMS ORDERED : 
+                            <ul>
+                              <li>
+                                   Ginger Lemon Honey - 1 
+                              </li>
+                              <br>
+                              <li>
+                                   Kadhai Paneer - 1 
+                             </li>
+                            </ul><br><br>
+                            <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>       
+                           </p>                    
+                      </div>
+                  </li>
+                  <li>
+                      <a class="uk-accordion-title" href="#">Frank</a>
+                      <div class="uk-accordion-content">
+                        <p style="font-size:.8em">
+                            Order Time : May 2, 2019, 8:43 p.m. <br> <br>
+                            Order No : 1556809995 <br><br>
+                            Order QRCode : <b> 8976 </b> <br><br>
+                            ITEMS ORDERED : 
+                            <ul>
+                              <li>
+                                   Ginger Lemon Honey - 1 
+                              </li>
+                              <br>
+                              <li>
+                                   Kadhai Paneer - 1 
+                             </li>
+                            </ul><br><br>
+                            <button class="uk-button uk-button-primary uk-button-small"  style="font-size:.8em">Edit</button> &nbsp; <button class="uk-button uk-button-secondary uk-button-small"  style="font-size:.8em">Delete</button>       
+                           </p>
+                      </div>
+                  </li>
+              </ul>   
+          </div>
+      </div>
+      
+  </div>
+  
+  
+
+
+
+</body>
+</html>
